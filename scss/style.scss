@@ -1,0 +1,6 @@
+// escribir primero características globales
+@import './components/variables';
+@import './components/global';
+
+// escribir después el código específico del bloque
+@import './pages/index';

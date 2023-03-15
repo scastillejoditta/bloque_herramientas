@@ -1,0 +1,27 @@
+{
+  "name": "bloque_herramientas",
+  "version": "1.0.0",
+  "description": "Bloque reutilizable de wordpress para la UBPD.",
+  "main": "index.js",
+  "scripts": {
+    "build-sass": "node-sass --include-path scss ./scss/style.scss ./css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scastillejoditta/bloque_herramientas.git"
+  },
+  "keywords": [
+    "Wordpress",
+    "UBPD",
+    "Pedagogía"
+  ],
+  "author": "Sara Castillejo Ditta",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scastillejoditta/bloque_herramientas/issues"
+  },
+  "homepage": "https://github.com/scastillejoditta/bloque_herramientas#readme",
+  "devDependencies": {
+    "node-sass": "^8.0.0"
+  }
+}

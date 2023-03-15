@@ -1,0 +1,47 @@
+/* -------------*/
+/* inicializar propiedades*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+body 
+{
+    padding: 0;
+}
+
+p
+{
+    font-family: 'texto', sans-serif;
+    color: $text_color;
+    line-height: 150%;
+    margin-bottom: 1em;
+}
+
+h1, h2, h3
+{
+    font-family: 'titulos', sans-serif;
+    color: $text_color;
+    margin-bottom:1em;
+}
+
+span
+{
+    font-family: 'leyenda', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'leyenda', sans-serif;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* -------------*/
+/* colores */

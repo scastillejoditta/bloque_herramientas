@@ -1,0 +1,40 @@
+
+/* fuentes locales*/
+
+@font-face {
+    font-family: 'texto';
+    src: url('../assets/font/Lato-Regular.ttf');
+   }
+
+@font-face {
+    font-family: 'titulos';
+    src: url('../assets/font/Lato-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'leyenda';
+    src: url('../assets/font/Lato-Light.ttf');
+}
+
+
+/* colores */
+
+$text_color: #173642;
+
+$hover_color: #24757d;
+$hover_podcast: #00d95f;
+$click_color: #f29980;
+
+$gray_one: #f1f7f4;
+$gray_two: #ededed;
+$gray_three: #bbbbbb;
+
+
+
+/* iconos de los botones */
+$botones:
+(
+        1: url("../assets/images/boton1.png"),
+        2: url("../assets/images/boton2.png"),
+        3: url("../assets/images/boton3.png")
+);

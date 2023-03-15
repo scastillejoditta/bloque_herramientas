@@ -1,0 +1,191 @@
+
+// 1-----------------------
+// maquetación del bloque con nesting y variables
+
+.blq
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    background-color: $gray_one;
+
+    &__encabezado
+    {
+        display: flex;
+        flex-direction: row;
+        
+        &-panel
+        {
+            width: 66%;
+            padding: 1em 2em;
+        }
+
+        &-caption
+        {
+
+            width: 33%;
+            padding: 2em;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+        }
+    }
+
+    &__botones
+    {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+
+        button
+        {
+            display: inline-block;
+            width: 33%;
+            height: 200px;
+            border: none;
+            font-family: 'leyenda', sans-serif;
+            color: white;
+            
+            span 
+            {
+                display: block;
+                border-radius: 50%;
+                background-color: black;
+                opacity: 0.3;
+                height: 100px;
+                width: 100px;
+                margin: auto;
+                
+                img
+                {
+                    display: block;
+                    width: 90px;
+                }
+            }
+            
+            &:hover
+            {
+                background-color: $hover_color;
+                cursor: pointer;
+
+            }
+
+            &:active
+            {
+                background-color: $click_color;
+            }
+
+            &:active span
+            {
+                opacity: 0.1;
+            }
+        }
+    }
+}
+
+// 2-----------------------
+// maquetación de los paneles con nesting y variables
+
+
+.pcronica, .pvideo
+{
+    display: none;
+}
+
+.pvideo
+{
+    &__contenedor {
+        min-width:100%; 
+        max-width:100%; 
+        position:relative; 
+        top:0;
+        left:0; 
+        margin:0; 
+        padding-top:56.25%;
+        
+        &-iframe
+        {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            border: none;
+        }
+    }
+}
+    
+.ppodcast
+{
+    &__list
+    {
+        margin: 2em;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+
+        &-item
+        {
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            justify-content: start;
+            
+            svg 
+            {
+                .spotify
+                {
+                    transform: scale(4.0);
+                    -ms-transform: scale(4.0);
+                    -webkit-transform: scale(4.0);
+
+                    fill: $text_color;
+                }
+
+                display: inline-block;
+                width: 100px;
+                height: 100px;
+            }
+
+            &:hover .spotify
+            {
+                fill: $hover_podcast;
+            }
+        }
+    }
+}
+
+// 3 -------------------------------------------------
+// asignar las url de las imágenes a sus etiquetas
+
+@each $boton, $ico in $botones 
+    {
+        .boton#{$boton} {
+            background: $ico no-repeat;  
+        }
+    }
+
+
+
+// 4 -----------------------
+// breakpoints mobile last
+
+@media (max-width: 835px)
+{
+    .blq__encabezado 
+    {
+        flex-direction: column-reverse;
+
+        &-caption, &-panel
+        {
+            width: 100%;
+        }
+    }
+}
