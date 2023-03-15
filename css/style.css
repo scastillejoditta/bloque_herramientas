@@ -78,7 +78,8 @@ ul {
       height: 200px;
       border: none;
       font-family: 'leyenda', sans-serif;
-      color: white; }
+      color: white;
+      transition: 0.3s; }
       .blq__botones button span {
         display: block;
         border-radius: 50%;
@@ -105,24 +106,23 @@ ul {
       .blq__botones button:active {
         background-color: #f29980; }
 
-.ppodcast, .pcronica {
-  display: none; }
-
-.pvideo__contenedor {
-  min-width: 100%;
-  max-width: 100%;
-  position: relative;
-  top: 0;
-  left: 0;
-  margin: 0;
-  padding-top: 56.25%; }
-  .pvideo__contenedor-iframe {
-    position: absolute;
-    height: 100%;
-    width: 100%;
+.pvideo {
+  display: inline-block; }
+  .pvideo__contenedor {
+    min-width: 100%;
+    max-width: 100%;
+    position: relative;
     top: 0;
     left: 0;
-    border: none; }
+    margin: 0;
+    padding-top: 56.25%; }
+    .pvideo__contenedor-iframe {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border: none; }
 
 .ppodcast__list {
   margin: 2em;
@@ -144,7 +144,8 @@ ul {
         transform: scale(4);
         -ms-transform: scale(4);
         -webkit-transform: scale(4);
-        fill: #173642; }
+        fill: #173642;
+        transition: 0.3s; }
     .ppodcast__list-item:hover .spotify {
       fill: #00d95f; }
 
@@ -189,6 +190,9 @@ ul {
         font-size: 0.8em;
         margin-bottom: 0.3em;
         color: #eee; }
+
+.ppodcast, .pcronica {
+  display: none; }
 
 .boton1 {
   background: url("../assets/images/boton1.png") no-repeat; }

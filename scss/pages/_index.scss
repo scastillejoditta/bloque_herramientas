@@ -50,7 +50,8 @@
             border: none;
             font-family: 'leyenda', sans-serif;
             color: white;
-            
+            transition: 0.3s;
+
             span 
             {
                 display: block;
@@ -95,18 +96,12 @@
 // 2-----------------------
 // maquetación de los paneles con nesting y variables
 
-
-    //inicializar
-
-.ppodcast, .pcronica
-{
-    display: none;
-}
-
     // panel de video
 
 .pvideo
 {
+    display: inline-block;
+
     &__contenedor {
         min-width:100%; 
         max-width:100%; 
@@ -157,6 +152,7 @@
                     -webkit-transform: scale(4.0);
 
                     fill: $text_color;
+                    transition: 0.3s;
                 }
 
                 display: inline-block;
@@ -237,6 +233,13 @@
 
 }
     
+    //inicializar
+
+.ppodcast, .pcronica
+{
+    display: none;
+}
+
 // 3 -------------------------------------------------
 // asignar las url de las imágenes a sus etiquetas
 
