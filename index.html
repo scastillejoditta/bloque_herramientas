@@ -17,18 +17,32 @@
         <section class="blq">
     
             <div class="blq__encabezado">
-                <div class="blq__encabezado-panel pvideo">
+                <div class="blq__encabezado-panel pvideo" id="panel_video">
                     <div class="pvideo__contenedor">
                         <iframe class="pvideo__contenedor-iframe" src="https://www.youtube.com/embed/uEN6gBNoHYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
                         </iframe>
                     </div>
                 </div>
 
-                <div class="blq__encabezado-panel pcronica">
-                    
+                <div class="blq__encabezado-panel pcronica" id="panel_cronica">
+
+                    <div class="pcronica__apertura">
+                        <div class="pcronica__apertura-img">
+                            <span></span>
+                        </div>
+                        <div class="pcronica__apertura-titular">
+                            <h3>Lorem ipsum dolor sit amet, consectetuer</h3>
+                            <p><b>&#8250; fecha publicación:</b> <i>29-nov-2022</i> </p>
+                            <p><b>&#8250; autoría:</b> <i>nombre autora</i> </p>
+                        </div>
+                    </div>
+
+                    <p><i>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque quod pariatur deleniti dignissimos accusamus iure at odit quas necessitatibus cum vitae perspiciatis possimus, ipsum fuga ipsa nostrum rerum blanditiis.</i></p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias neque quod pariatur deleniti dignissimos accusamus iure at odit quas necessitatibus cum vitae perspiciatis possimus, ipsum fuga ipsa nostrum rerum blanditiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia enim ab quibusdam sequi eos neque voluptas a numquam nisi, ex dolore, temporibus sapiente aspernatur doloremque repudiandae laboriosam, architecto deserunt ut.</p>
+
                 </div>
                 
-                <div class="blq__encabezado-panel ppodcast">
+                <div class="blq__encabezado-panel ppodcast" id="panel_podcast">
                     <nav>                         
                         <ul class="ppodcast__list">
                             <li> 
@@ -78,19 +92,19 @@
             </div>              
     
             <div class="blq__botones">
-                <button class="blq__botones-video">
+                <button class="blq__botones-video" id="btn_video">
                     <span>
                         <img src="#" class="boton1" alt="Ver videos"/>
                         VIDEOS
                     </span>
                 </button>
-                <button class="blq__botones-cronica">
+                <button class="blq__botones-cronica" id="btn_cronica">
                     <span>
                         <img src="#" class="boton2" alt="Ver crónicas"/>
                         CRÓNICAS
                     </span>
                 </button>
-                <button class="blq__botones-podcast">
+                <button class="blq__botones-podcast" id="btn_podcast">
                     <span>
                         <img src="#" class="boton3" alt="Escuchar pódcast"/>
                         PÓDCAST
@@ -102,5 +116,9 @@
         </section>
     
     </main>
+
+    <!-- Enlazar funcionalidad de javascript -->
+  <script src="./scripts/index.js"></script>
+
 </body>
 </html>

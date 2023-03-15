@@ -89,16 +89,23 @@ ul {
         margin: auto; }
         .blq__botones button span img {
           display: block;
-          width: 90px; }
+          margin-top: 2em;
+          width: 70px;
+          height: 70px;
+          border: none;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+          padding-left: 90px;
+          overflow: hidden;
+          background-size: 60%;
+          background-position: 60%; }
       .blq__botones button:hover {
         background-color: #24757d;
         cursor: pointer; }
       .blq__botones button:active {
         background-color: #f29980; }
-      .blq__botones button:active span {
-        opacity: 0.1; }
 
-.pcronica, .pvideo {
+.ppodcast, .pcronica {
   display: none; }
 
 .pvideo__contenedor {
@@ -140,6 +147,48 @@ ul {
         fill: #173642; }
     .ppodcast__list-item:hover .spotify {
       fill: #00d95f; }
+
+.pcronica {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; }
+  .pcronica__apertura {
+    min-width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 0 30px 0;
+    padding-top: 250px; }
+    .pcronica__apertura-img {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+      border: none;
+      background-image: url("../assets/images/portada_guate.jpeg");
+      background-size: cover; }
+      .pcronica__apertura-img span {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: black;
+        opacity: 0.5; }
+    .pcronica__apertura-titular {
+      position: absolute;
+      width: 60%;
+      top: 30%;
+      left: 10%; }
+      .pcronica__apertura-titular h3 {
+        font-size: 2em;
+        margin-bottom: 0.3em;
+        color: #eee; }
+      .pcronica__apertura-titular p {
+        font-size: 0.8em;
+        margin-bottom: 0.3em;
+        color: #eee; }
 
 .boton1 {
   background: url("../assets/images/boton1.png") no-repeat; }
