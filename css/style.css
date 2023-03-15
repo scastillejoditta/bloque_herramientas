@@ -208,3 +208,10 @@ ul {
     flex-direction: column-reverse; }
     .blq__encabezado-caption, .blq__encabezado-panel {
       width: 100%; } }
+
+@media (max-width: 463px) {
+  .pcronica__apertura-titular {
+    width: 90%;
+    top: 30%; }
+    .pcronica__apertura-titular h3, .pcronica__apertura-titular p {
+      line-height: 100%; } }
